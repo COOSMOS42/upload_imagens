@@ -11,6 +11,8 @@ cloudinary.config(
     api_secret=st.secrets["cloudinary"]["api_secret"]
 )
 
+st.page(title="Upload de imagens")
+
 # Inicializa o estado anterior do curso
 if 'selected_course' not in st.session_state:
     st.session_state.selected_course = None
